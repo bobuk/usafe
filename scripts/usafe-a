@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+import usafe
+import sys
+
+def main(files):
+    if not files:
+        sys.stderr.write('No files given\n')
+        sys.exit(-1)
+    usafe.create_safe(files, cb=lambda x: sys.stdout.write('File ' + str(x.name) + ' writen (' +str(x.size) + ')\n'))
+    sys.stdout.write('... file `secret` writen\n')
+
+if __name__ == '__main__':
+    main(sys.argv[1:])
