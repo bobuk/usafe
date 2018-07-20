@@ -1,5 +1,5 @@
 from setuptools import setup, find_packages
-setup(name="usafe", version="0.1.0",
+setup(name="usafe", version="0.1.1",
       py_modules=['usafe'],
       url="http://github.com/bobuk/usafe",
       author="Grigory Bakunov",
@@ -8,7 +8,7 @@ setup(name="usafe", version="0.1.0",
       install_requires=[
           'privy'
       ],
-      scripts = ['scripts/usafe-archive'],
+      scripts = ['scripts/usafe-a'],
       classifiers = [
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
